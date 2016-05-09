@@ -14,13 +14,14 @@
 #include <UTFT.h>
 #include <UTouch.h>
 
-// Uncomment the next line for chipKit Uno32
-//UTFT        myGLCD(ITDB24D,34,35,36,37);   // Remember to change the model parameter to suit your display module!
-//UTouch      myTouch(20,21,22,23,24);
+// Initialize display
+// ------------------
+// Remember to change the model parameter to suit your display module!
+UTFT    myGLCD(ITDB32S,15,18,11,32);
 
-// Uncomment the next line for chipKit Max32
-UTFT        myGLCD(ITDB32S,82,83,84,85);   // Remember to change the model parameter to suit your display module!
-UTouch      myTouch(62,63,64,65,66);
+// Initialize touchscreen
+// ----------------------
+UTouch  myTouch(31, 13, 19, 28, 17);
 
 void setup()
 {
@@ -41,7 +42,9 @@ void loop()
     x = myTouch.getX();
     y = myTouch.getY();
     if ((x!=-1) and (y!=-1))
+    {
       myGLCD.drawPixel (x, y);
+    }
   }
 }
 

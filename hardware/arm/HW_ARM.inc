@@ -34,3 +34,14 @@ word UTouch::touch_ReadData()
 	return(data);
 }
 
+#if defined(ENERGIA)
+	volatile uint32_t* UTouch::portOutputRegister(int value)
+	{
+		return portBASERegister(value);
+	}
+
+	volatile uint32_t* UTouch::portInputRegister(int value)
+	{
+		return portBASERegister(value);
+	}
+#endif

@@ -16,28 +16,12 @@
 
 // Initialize display
 // ------------------
-// Set the pins to the correct ones for your development board
-// -----------------------------------------------------------
-// Standard Arduino Uno/2009 Shield            : <display model>,19,18,17,16
-// Standard Arduino Mega/Due shield            : <display model>,38,39,40,41
-// CTE TFT LCD/SD Shield for Arduino Due       : <display model>,25,26,27,28
-// Teensy 3.x TFT Test Board                   : <display model>,23,22, 3, 4
-// ElecHouse TFT LCD/SD Shield for Arduino Due : <display model>,22,23,31,33
-//
 // Remember to change the model parameter to suit your display module!
-UTFT    myGLCD(NIC35WS,38,39,40,41); //3.5" TFTLCD for arduino 2560 from mcufriend.com
+UTFT    myGLCD(ITDB32S,15,18,11,32);
 
 // Initialize touchscreen
 // ----------------------
-// Set the pins to the correct ones for your development board
-// -----------------------------------------------------------
-// Standard Arduino Uno/2009 Shield            : 15,10,14, 9, 8
-// Standard Arduino Mega/Due shield            :  6, 5, 4, 3, 2
-// CTE TFT LCD/SD Shield for Arduino Due       :  6, 5, 4, 3, 2
-// Teensy 3.x TFT Test Board                   : 26,31,27,28,29
-// ElecHouse TFT LCD/SD Shield for Arduino Due : 25,26,27,29,30
-//
-UTouch  myTouch( 6, 5, 4, 3, 2);
+UTouch  myTouch(31, 13, 19, 28, 17);
 
 // Declare which fonts we will be using
 extern uint8_t BigFont[];

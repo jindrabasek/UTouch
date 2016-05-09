@@ -1,14 +1,12 @@
 /*
   UTouch.h - Arduino/chipKit library support for Color TFT LCD Touch screens 
-  Copyright (C)2010-2014 Henning Karlsen. All right reserved
+  Copyright (C)2015 Rinky-Dink Electronics, Henning Karlsen. All right reserved
   
   Basic functionality of this library are based on the demo-code provided by
-  ITead studio. You can find the latest version of the library at
-  http://www.henningkarlsen.com/electronics
+  ITead studio.
 
-  If you make any modifications or improvements to the code, I would appreciate
-  that you share the code with me so that I might include it in the next release.
-  I can be contacted through http://www.henningkarlsen.com/electronics/contact.php
+  You can find the latest version of the library at 
+  http://www.RinkyDinkElectronics.com/
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the CC BY-NC-SA 3.0 license.
@@ -25,7 +23,7 @@
 #ifndef UTouch_h
 #define UTouch_h
 
-#define UTOUCH_VERSION	124
+#define UTOUCH_VERSION	130
 
 #if defined(__AVR__)
 	#include "Arduino.h"
@@ -75,6 +73,11 @@ class UTouch
 
 		void	touch_WriteData(byte data);
 		word	touch_ReadData();
+
+#if defined(ENERGIA)
+		volatile uint32_t* portOutputRegister(int value);
+		volatile uint32_t* portInputRegister(int value);
+#endif
 };
 
 #endif

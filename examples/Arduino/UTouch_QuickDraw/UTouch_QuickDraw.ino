@@ -1,5 +1,6 @@
-// UTouch_QuickDraw (C)2010-2014 Henning Karlsen
-// web: http://www.henningkarlsen.com/electronics
+// UTouch_QuickDraw 
+// Copyright (C)2015 Rinky-Dink Electronics, Henning Karlsen. All right reserved
+// web: http://www.RinkyDinkElectronics.com/
 //
 // This program is a quick demo of how to use the library.
 //

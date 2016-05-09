@@ -1,5 +1,6 @@
-// UTouch_QuickPaint (C)2013 Henning Karlsen
-// web: http://www.henningkarlsen.com/electronics
+// UTouch_QuickPaint 
+// Copyright (C)2015 Rinky-Dink Electronics, Henning Karlsen. All right reserved
+// web: http://www.RinkyDinkElectronics.com/
 //
 // This program is a quick demo of how to use the library.
 //

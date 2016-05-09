@@ -1,5 +1,6 @@
-// UTouch_Calibration (C)2013 Henning Karlsen
-// web: http://www.henningkarlsen.com/electronics
+// UTouch_Calibration 
+// Copyright (C)2015 Rinky-Dink Electronics, Henning Karlsen. All right reserved
+// web: http://www.RinkyDinkElectronics.com/
 //
 // This program can be used to calibrate the touchscreen
 // of the display modules.
